@@ -131,7 +131,7 @@ func TestToxiproxyTimeoutSimulatesPartition(t *testing.T) {
 		t.Skip("set CHAOS_UPSTREAM_ADDR to the dependency being proxied (e.g. localhost:5432)")
 	}
 
-	const proxyName = "gpay_chaos_partition"
+	const proxyName = "payvora_chaos_partition"
 	require.NoError(t, client.createProxy(proxyName, "0.0.0.0:25432", upstream))
 	defer client.deleteProxy(proxyName)
 
@@ -163,7 +163,7 @@ func TestToxiproxyLatencyDegradesWithoutFailing(t *testing.T) {
 		t.Skip("set CHAOS_UPSTREAM_ADDR to the dependency being proxied")
 	}
 
-	const proxyName = "gpay_chaos_latency"
+	const proxyName = "payvora_chaos_latency"
 	require.NoError(t, client.createProxy(proxyName, "0.0.0.0:25433", upstream))
 	defer client.deleteProxy(proxyName)
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/yourusername/gpay-remit/logger"
+	"github.com/yourusername/payvora/logger"
 )
 
 func StartMonitor(ctx context.Context, wg *sync.WaitGroup) {

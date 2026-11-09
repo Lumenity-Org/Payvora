@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yourusername/gpay-remit/logger"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/logger"
+	"github.com/yourusername/payvora/models"
 	"gorm.io/gorm"
 )
 

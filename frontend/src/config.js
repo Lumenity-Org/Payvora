@@ -1,6 +1,6 @@
 /**
  * Required environment variables:
- *   REACT_APP_API_URL          - Base URL of the Gpay-Remit backend API
+ *   REACT_APP_API_URL          - Base URL of the Payvora backend API
  *                                e.g. http://localhost:8080/api/v1
  *   REACT_APP_STELLAR_NETWORK  - Stellar network: "testnet" or "mainnet"
  *                                (optional — defaults to "testnet")
@@ -27,12 +27,12 @@ function resolveApiUrl() {
   if (!raw || raw.trim() === "") {
     if (IS_DEV_OR_TEST) {
       console.warn(
-        `[Gpay-Remit] REACT_APP_API_URL is not set. Using development fallback: ${DEV_FALLBACK_URL}`
+        `[Payvora] REACT_APP_API_URL is not set. Using development fallback: ${DEV_FALLBACK_URL}`
       );
       return DEV_FALLBACK_URL;
     }
     throw new Error(
-      "[Gpay-Remit] REACT_APP_API_URL is required but not set. " +
+      "[Payvora] REACT_APP_API_URL is required but not set. " +
         "Set it in your environment or .env file before starting the app."
     );
   }
@@ -40,13 +40,13 @@ function resolveApiUrl() {
   if (!isValidUrl(raw)) {
     if (IS_DEV_OR_TEST) {
       console.warn(
-        `[Gpay-Remit] REACT_APP_API_URL "${raw}" is not a valid http/https URL. ` +
+        `[Payvora] REACT_APP_API_URL "${raw}" is not a valid http/https URL. ` +
           `Using development fallback: ${DEV_FALLBACK_URL}`
       );
       return DEV_FALLBACK_URL;
     }
     throw new Error(
-      `[Gpay-Remit] REACT_APP_API_URL "${raw}" is not a valid http/https URL. ` +
+      `[Payvora] REACT_APP_API_URL "${raw}" is not a valid http/https URL. ` +
         "Provide a full URL including protocol, e.g. https://api.example.com/api/v1"
     );
   }

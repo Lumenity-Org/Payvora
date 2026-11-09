@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gpay-remit-frontend
+  name: payvora-frontend
   labels:
-    app: gpay-remit-frontend
+    app: payvora-frontend
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: gpay-remit-frontend
+      app: payvora-frontend
   template:
     metadata:
       labels:
-        app: gpay-remit-frontend
+        app: payvora-frontend
     spec:
       containers:
         - name: frontend
-          image: gpay-remit-frontend:latest
+          image: payvora-frontend:latest
           ports:
             - containerPort: 80
           resources:
@@ -30,10 +30,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: gpay-remit-frontend
+  name: payvora-frontend
 spec:
   selector:
-    app: gpay-remit-frontend
+    app: payvora-frontend
   ports:
     - port: 80
       targetPort: 80

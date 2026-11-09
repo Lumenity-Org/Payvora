@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"github.com/yourusername/gpay-remit/config"
+	"github.com/yourusername/payvora/config"
 )
 
 func setupHealthRouter(t *testing.T) *gin.Engine {
@@ -86,7 +86,7 @@ func TestHealthResponseFields(t *testing.T) {
 	var resp map[string]interface{}
 	json.Unmarshal(w.Body.Bytes(), &resp)
 	assert.NotEmpty(t, resp["status"])
-	assert.Equal(t, "gpay-remit-api", resp["service"])
+	assert.Equal(t, "payvora-api", resp["service"])
 	assert.NotEmpty(t, resp["timestamp"])
 	assert.NotNil(t, resp["dependencies"])
 }

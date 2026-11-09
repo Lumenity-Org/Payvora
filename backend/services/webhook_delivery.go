@@ -17,8 +17,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/yourusername/gpay-remit/logger"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/logger"
+	"github.com/yourusername/payvora/models"
 	"gorm.io/gorm"
 )
 
@@ -294,7 +294,7 @@ func (s *WebhookDeliveryService) sendWebhookRequest(webhook *models.Webhook, pay
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("X-Webhook-Signature", signature)
 	req.Header.Set("X-Webhook-ID", fmt.Sprintf("%d", webhook.ID))
-	req.Header.Set("User-Agent", "GPay-Remit-Webhook/1.0")
+	req.Header.Set("User-Agent", "Payvora-Webhook/1.0")
 	if requestID != "" {
 		req.Header.Set("X-Request-ID", requestID)
 	}

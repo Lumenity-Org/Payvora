@@ -10,7 +10,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
-	"github.com/yourusername/gpay-remit/logger"
+	"github.com/yourusername/payvora/logger"
 )
 
 // maxBodyBytes is the maximum number of request/response body bytes captured

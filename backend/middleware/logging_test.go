@@ -11,7 +11,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/yourusername/gpay-remit/logger"
+	"github.com/yourusername/payvora/logger"
 )
 
 func init() {

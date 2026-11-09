@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/models"
 )
 
 // The factories exist so tests stop depending on the zero value of fields they

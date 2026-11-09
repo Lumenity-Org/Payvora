@@ -1,7 +1,7 @@
 {
   "info": {
-    "name": "Gpay-Remit API v2",
-    "description": "Complete API collection for the Gpay-Remit cross-border payment platform.",
+    "name": "Payvora API v2",
+    "description": "Complete API collection for the Payvora cross-border payment platform.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "auth": {

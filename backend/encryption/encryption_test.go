@@ -70,7 +70,7 @@ func TestAESGCMEncryptor_TamperedCiphertextFails(t *testing.T) {
 }
 
 func TestEncryptedString_GORMDriverValuerAndScanner(t *testing.T) {
-	key := []byte("gpay-remit-master-key-for-test-32")
+	key := []byte("payvora-master-key-for-test-32")
 	enc, err := NewAESGCMEncryptor(key)
 	require.NoError(t, err)
 	SetDefaultEncryptor(enc)

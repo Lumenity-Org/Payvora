@@ -15,7 +15,7 @@ Closes #304: FIX ALL CLI ISSUES
 
 ### 🎯 Issue #304: Fix All CLI Issues
 
-**Branch:** `gpay-remit-cli-fixes`
+**Branch:** `payvora-cli-fixes`
 
 - Fixed `cargo test` compilation issues in the `contracts` package.
 - Pinned Rust dependencies (`ed25519-dalek`) in the `soroban-env-host` build graph to resolve `ChaCha20Rng` trait bound errors.

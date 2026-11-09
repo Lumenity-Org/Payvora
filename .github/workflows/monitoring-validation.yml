@@ -98,7 +98,7 @@ jobs:
         run: |
           HOST=$(yq '.settings.production_host' monitoring/uptimerobot.yml)
           echo "Production host: ${HOST}"
-          if [[ "${HOST}" != "https://gpay-remit.example.com" ]]; then
+          if [[ "${HOST}" != "https://payvora.example.com" ]]; then
             echo "ERROR: Unexpected production host: ${HOST}"
             exit 1
           fi

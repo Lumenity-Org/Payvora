@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/yourusername/gpay-remit/config"
+	"github.com/yourusername/payvora/config"
 )
 
 // These tests build their own RateLimiter (via newRateLimiter, not the

@@ -1,4 +1,4 @@
-# Gpay-Remit
+# Payvora
 
 A cross-border payment and remittance hub built on the Stellar network, enabling instant, low-cost international money transfers with multi-currency support.
 
@@ -6,7 +6,7 @@ i just need to create a drrsft pr
 
 ## Overview
 
-Gpay-Remit leverages Stellar's payment rails to provide:
+Payvora leverages Stellar's payment rails to provide:
 
 - **Instant Remittances**: Near-instant cross-border transfers
 - **Multi-Currency Support**: Automatic currency conversions via Stellar DEX
@@ -26,7 +26,7 @@ Gpay-Remit leverages Stellar's payment rails to provide:
 ## Project Structure
 
 ```
-Gpay-Remit/
+Payvora/
 ├── contracts/          # Soroban smart contracts (Rust)
 ├── backend/           # Go API server
 ├── frontend/          # React.js web interface
@@ -49,8 +49,8 @@ Gpay-Remit/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Gpay-Remit.git
-cd Gpay-Remit
+git clone https://github.com/yourusername/Payvora.git
+cd Payvora
 
 # Run setup script
 chmod +x scripts/setup.sh

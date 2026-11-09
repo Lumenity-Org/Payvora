@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/redis/go-redis/v9"
-	"github.com/yourusername/gpay-remit/config"
+	"github.com/yourusername/payvora/config"
 	"gorm.io/gorm"
 )
 
@@ -94,7 +94,7 @@ func (h *HealthHandler) Health(c *gin.Context) {
 
 	c.JSON(httpStatus, healthResponse{
 		Status:    overall,
-		Service:   "gpay-remit-api",
+		Service:   "payvora-api",
 		Timestamp: time.Now().UTC().Format(time.RFC3339),
 		Dependencies: map[string]interface{}{
 			"database": dbStatus,

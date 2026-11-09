@@ -12,16 +12,16 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/gpay-remit/config"
-	"github.com/yourusername/gpay-remit/graphql"
-	"github.com/yourusername/gpay-remit/handlers"
-	"github.com/yourusername/gpay-remit/models"
-	"github.com/yourusername/gpay-remit/logger"
-	"github.com/yourusername/gpay-remit/metrics"
-	"github.com/yourusername/gpay-remit/middleware"
-	"github.com/yourusername/gpay-remit/services"
-	"github.com/yourusername/gpay-remit/utils"
-	"github.com/yourusername/gpay-remit/workers"
+	"github.com/yourusername/payvora/config"
+	"github.com/yourusername/payvora/graphql"
+	"github.com/yourusername/payvora/handlers"
+	"github.com/yourusername/payvora/models"
+	"github.com/yourusername/payvora/logger"
+	"github.com/yourusername/payvora/metrics"
+	"github.com/yourusername/payvora/middleware"
+	"github.com/yourusername/payvora/services"
+	"github.com/yourusername/payvora/utils"
+	"github.com/yourusername/payvora/workers"
 )
 
 // shuttingDown signals goroutines to stop when a shutdown signal is received
@@ -276,7 +276,7 @@ func main() {
 
 	errCh := make(chan error, 1)
 	go func() {
-		logger.Log.WithField("port", cfg.Port).Info("Starting Gpay-Remit API server")
+		logger.Log.WithField("port", cfg.Port).Info("Starting Payvora API server")
 		if err := server.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
 			errCh <- err
 		}

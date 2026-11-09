@@ -33,7 +33,7 @@ export interface QueryParams {
   [key: string]: string | number | undefined;
 }
 
-export class GpayRemitClient {
+export class PayvoraClient {
   constructor(opts: ClientOptions);
   setToken(token: string): void;
 

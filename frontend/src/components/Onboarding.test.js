@@ -15,7 +15,7 @@ describe("Onboarding Component", () => {
   test("renders initial welcome step when isOpen is true", () => {
     render(<Onboarding isOpen={true} />);
     expect(screen.getByRole("dialog")).toBeInTheDocument();
-    expect(screen.getByText("Welcome to Gpay-Remit")).toBeInTheDocument();
+    expect(screen.getByText("Welcome to Payvora")).toBeInTheDocument();
     expect(screen.getByText("Getting Started")).toBeInTheDocument();
     expect(screen.getByText("Skip Tour")).toBeInTheDocument();
     expect(screen.getByText("Next →")).toBeInTheDocument();
@@ -61,7 +61,7 @@ describe("Onboarding Component", () => {
 
     fireEvent.click(screen.getByLabelText("Close onboarding tour"));
     expect(handleClose).toHaveBeenCalledTimes(1);
-    expect(localStorage.getItem("gpay_onboarding_completed")).toBe("true");
+    expect(localStorage.getItem("payvora_onboarding_completed")).toBe("true");
   });
 
   test("skip button sets localStorage and triggers onClose", () => {
@@ -70,7 +70,7 @@ describe("Onboarding Component", () => {
 
     fireEvent.click(screen.getByText("Skip Tour"));
     expect(handleClose).toHaveBeenCalledTimes(1);
-    expect(localStorage.getItem("gpay_onboarding_completed")).toBe("true");
+    expect(localStorage.getItem("payvora_onboarding_completed")).toBe("true");
   });
 
   test("completing the last step triggers onComplete and onClose", () => {
@@ -85,7 +85,7 @@ describe("Onboarding Component", () => {
     fireEvent.click(screen.getByText("Get Started"));
     expect(handleComplete).toHaveBeenCalledTimes(1);
     expect(handleClose).toHaveBeenCalledTimes(1);
-    expect(localStorage.getItem("gpay_onboarding_completed")).toBe("true");
+    expect(localStorage.getItem("payvora_onboarding_completed")).toBe("true");
   });
 
   test("supports keyboard navigation with Escape, ArrowRight, and ArrowLeft", () => {
@@ -98,7 +98,7 @@ describe("Onboarding Component", () => {
 
     // Arrow left goes back
     fireEvent.keyDown(window, { key: "ArrowLeft" });
-    expect(screen.getByText("Welcome to Gpay-Remit")).toBeInTheDocument();
+    expect(screen.getByText("Welcome to Payvora")).toBeInTheDocument();
 
     // Escape closes
     fireEvent.keyDown(window, { key: "Escape" });

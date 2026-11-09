@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yourusername/gpay-remit/config"
+	"github.com/yourusername/payvora/config"
 )
 
 // ExchangeRate is the normalized response returned to API consumers.

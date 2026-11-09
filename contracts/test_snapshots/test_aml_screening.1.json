@@ -438,7 +438,7 @@
           "v0": {
             "topics": [
               {
-                "symbol": "gpayremit"
+                "symbol": "payvora"
               },
               {
                 "symbol": "hub"
@@ -575,7 +575,7 @@
           "v0": {
             "topics": [
               {
-                "symbol": "gpayremit"
+                "symbol": "payvora"
               },
               {
                 "symbol": "hub"

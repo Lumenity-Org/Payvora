@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/gpay-remit/errors"
-	"github.com/yourusername/gpay-remit/services"
+	"github.com/yourusername/payvora/errors"
+	"github.com/yourusername/payvora/services"
 )
 
 type FeeHandler struct {

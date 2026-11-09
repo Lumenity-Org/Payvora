@@ -27,7 +27,7 @@ import (
 	"time"
 
 	"github.com/brianvoe/gofakeit/v7"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/models"
 )
 
 // Seed fixes the generator so a failing test can be replayed exactly.

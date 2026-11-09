@@ -1,5 +1,5 @@
 # UptimeRobot Monitoring Configuration
-# Gpay-Remit — Issue #280
+# Payvora — Issue #280
 #
 # All critical endpoints monitored every 5 minutes.
 # Provision via: scripts/setup_monitoring.sh
@@ -16,7 +16,7 @@
 settings:
   default_interval: 300        # 5 minutes (seconds)
   default_timeout: 30          # seconds before a check is considered down
-  production_host: https://gpay-remit.example.com
+  production_host: https://payvora.example.com
 
 # ---------------------------------------------------------------------------
 # Alert contacts — referenced by monitors below
@@ -45,8 +45,8 @@ monitors:
 
   # ── Health endpoints ──────────────────────────────────────────────────────
 
-  - friendly_name: "[Gpay-Remit] Health Check"
-    url: https://gpay-remit.example.com/health
+  - friendly_name: "[Payvora] Health Check"
+    url: https://payvora.example.com/health
     type: 1
     interval: 300
     timeout: 30
@@ -64,8 +64,8 @@ monitors:
       - health
       - critical
 
-  - friendly_name: "[Gpay-Remit] Readiness Probe"
-    url: https://gpay-remit.example.com/health/ready
+  - friendly_name: "[Payvora] Readiness Probe"
+    url: https://payvora.example.com/health/ready
     type: 1
     interval: 300
     timeout: 30
@@ -81,8 +81,8 @@ monitors:
       - health
       - critical
 
-  - friendly_name: "[Gpay-Remit] Liveness Probe"
-    url: https://gpay-remit.example.com/health/live
+  - friendly_name: "[Payvora] Liveness Probe"
+    url: https://payvora.example.com/health/live
     type: 1
     interval: 300
     timeout: 30
@@ -100,8 +100,8 @@ monitors:
 
   # ── Authentication ────────────────────────────────────────────────────────
 
-  - friendly_name: "[Gpay-Remit] Auth Login Endpoint"
-    url: https://gpay-remit.example.com/api/v1/auth/login
+  - friendly_name: "[Payvora] Auth Login Endpoint"
+    url: https://payvora.example.com/api/v1/auth/login
     type: 1
     interval: 300
     timeout: 30
@@ -124,8 +124,8 @@ monitors:
 
   # ── Core API endpoints ────────────────────────────────────────────────────
 
-  - friendly_name: "[Gpay-Remit] Remittances API"
-    url: https://gpay-remit.example.com/api/v1/remittances
+  - friendly_name: "[Payvora] Remittances API"
+    url: https://payvora.example.com/api/v1/remittances
     type: 1
     interval: 300
     timeout: 30
@@ -145,8 +145,8 @@ monitors:
       - api
       - critical
 
-  - friendly_name: "[Gpay-Remit] Fee Calculator API"
-    url: https://gpay-remit.example.com/api/v1/fees/calculate
+  - friendly_name: "[Payvora] Fee Calculator API"
+    url: https://payvora.example.com/api/v1/fees/calculate
     type: 1
     interval: 300
     timeout: 30
@@ -163,8 +163,8 @@ monitors:
       - api
       - critical
 
-  - friendly_name: "[Gpay-Remit] Exchange Rates API"
-    url: https://gpay-remit.example.com/api/v1/exchange-rates
+  - friendly_name: "[Payvora] Exchange Rates API"
+    url: https://payvora.example.com/api/v1/exchange-rates
     type: 1
     interval: 300
     timeout: 30
@@ -183,8 +183,8 @@ monitors:
 
   # ── Documentation ─────────────────────────────────────────────────────────
 
-  - friendly_name: "[Gpay-Remit] API Documentation"
-    url: https://gpay-remit.example.com/api/docs
+  - friendly_name: "[Payvora] API Documentation"
+    url: https://payvora.example.com/api/docs
     type: 1
     interval: 300
     timeout: 30
@@ -198,8 +198,8 @@ monitors:
     tags:
       - docs
 
-  - friendly_name: "[Gpay-Remit] OpenAPI Spec"
-    url: https://gpay-remit.example.com/api/docs/openapi.yaml
+  - friendly_name: "[Payvora] OpenAPI Spec"
+    url: https://payvora.example.com/api/docs/openapi.yaml
     type: 1
     interval: 300
     timeout: 30
@@ -217,8 +217,8 @@ monitors:
 
   # ── Frontend ──────────────────────────────────────────────────────────────
 
-  - friendly_name: "[Gpay-Remit] Frontend"
-    url: https://gpay-remit.example.com/
+  - friendly_name: "[Payvora] Frontend"
+    url: https://payvora.example.com/
     type: 1
     interval: 300
     timeout: 30

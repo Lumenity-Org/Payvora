@@ -1,8 +1,8 @@
-# Gpay-Remit Architecture
+# Payvora Architecture
 
 ## Overview
 
-Gpay-Remit is a three-tier application built on the Stellar blockchain network for cross-border payments and remittances.
+Payvora is a three-tier application built on the Stellar blockchain network for cross-border payments and remittances.
 
 ## Architecture Layers
 

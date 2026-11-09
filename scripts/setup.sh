@@ -2,7 +2,7 @@
 
 set -e
 
-echo " Setting up Gpay-Remit..."
+echo " Setting up Payvora..."
 
 # Check prerequisites
 echo "Checking prerequisites..."
@@ -55,7 +55,7 @@ echo " Creating environment files..."
 if [ ! -f backend/.env ]; then
     cat > backend/.env << EOF
 PORT=8080
-DATABASE_URL=postgres://gpay:gpay_password@localhost:5432/gpay_remit?sslmode=disable
+DATABASE_URL=postgres://payvora:payvora_password@localhost:5432/payvora?sslmode=disable
 STELLAR_NETWORK=testnet
 HORIZON_URL=https://horizon-testnet.stellar.org
 NETWORK_PASSPHRASE=Test SDF Network ; September 2015

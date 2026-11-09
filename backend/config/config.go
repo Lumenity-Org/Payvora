@@ -15,8 +15,8 @@ import (
 	"gorm.io/gorm"
 	gormlogger "gorm.io/gorm/logger"
 
-	"github.com/yourusername/gpay-remit/logger"
-	"github.com/yourusername/gpay-remit/secrets"
+	"github.com/yourusername/payvora/logger"
+	"github.com/yourusername/payvora/secrets"
 )
 
 var connectionPoolMonitor = struct {

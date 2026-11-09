@@ -3,10 +3,10 @@ import "./Onboarding.css";
 
 const ONBOARDING_STEPS = [
   {
-    title: "Welcome to Gpay-Remit",
+    title: "Welcome to Payvora",
     badge: "Getting Started",
     description:
-      "Gpay-Remit is a next-generation cross-border payment platform powered by the Stellar network. Send funds globally in seconds with ultra-low fees, real-time FX rates, and bank-grade security.",
+      "Payvora is a next-generation cross-border payment platform powered by the Stellar network. Send funds globally in seconds with ultra-low fees, real-time FX rates, and bank-grade security.",
     icon: "🌐",
     highlights: [
       "Sub-second global settlements via Stellar",
@@ -64,7 +64,7 @@ const ONBOARDING_STEPS = [
   },
 ];
 
-const STORAGE_KEY = "gpay_onboarding_completed";
+const STORAGE_KEY = "payvora_onboarding_completed";
 
 export function Onboarding({ isOpen, onClose, onComplete }) {
   const [currentStep, setCurrentStep] = useState(0);

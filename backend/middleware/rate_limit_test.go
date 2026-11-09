@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"github.com/yourusername/gpay-remit/config"
+	"github.com/yourusername/payvora/config"
 )
 
 func TestRateLimiter_IncrementAndCheck(t *testing.T) {

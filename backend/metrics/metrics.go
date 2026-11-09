@@ -11,7 +11,7 @@ var (
 	// Technical metrics: HTTP request counts, latency histogram, errors
 	HTTPRequestsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gpay_remit",
+			Namespace: "payvora",
 			Name:      "http_requests_total",
 			Help:      "Total number of HTTP requests processed.",
 		},
@@ -20,7 +20,7 @@ var (
 
 	HTTPRequestDuration = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
-			Namespace: "gpay_remit",
+			Namespace: "payvora",
 			Name:      "http_request_duration_seconds",
 			Help:      "Histogram of HTTP request latency in seconds.",
 			Buckets:   prometheus.DefBuckets,
@@ -30,7 +30,7 @@ var (
 
 	SystemErrorsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gpay_remit",
+			Namespace: "payvora",
 			Name:      "system_errors_total",
 			Help:      "Total number of system and application errors.",
 		},
@@ -40,7 +40,7 @@ var (
 	// Business metrics: Payments, amounts, error tracking
 	PaymentsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gpay_remit",
+			Namespace: "payvora",
 			Name:      "payments_total",
 			Help:      "Total number of payments processed.",
 		},
@@ -49,7 +49,7 @@ var (
 
 	PaymentAmountTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gpay_remit",
+			Namespace: "payvora",
 			Name:      "payment_amount_total",
 			Help:      "Cumulative volume of payment amounts processed.",
 		},
@@ -58,7 +58,7 @@ var (
 
 	PaymentErrorsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gpay_remit",
+			Namespace: "payvora",
 			Name:      "payment_errors_total",
 			Help:      "Total number of failed payment attempts.",
 		},

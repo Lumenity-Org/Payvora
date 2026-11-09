@@ -14,7 +14,7 @@ export const I18nContext = createContext();
 
 const translations = {
   en: {
-    brand: "Gpay-Remit",
+    brand: "Payvora",
     tour: "✨ Product Tour",
     send: "Send Remittance",
     invoices: "View Invoices",
@@ -23,7 +23,7 @@ const translations = {
     skipToMain: "Skip to main content"
   },
   es: {
-    brand: "Gpay-Remit",
+    brand: "Payvora",
     tour: "✨ Recorrido del producto",
     send: "Enviar Remesa",
     invoices: "Ver Facturas",
@@ -41,7 +41,7 @@ function App() {
   const [lang, setLang] = useState("en");
 
   useEffect(() => {
-    const completed = localStorage.getItem("gpay_onboarding_completed");
+    const completed = localStorage.getItem("payvora_onboarding_completed");
     if (!completed) {
       setShowOnboarding(true);
     }

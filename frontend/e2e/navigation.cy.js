@@ -3,8 +3,8 @@ describe("Navigation and Layout", () => {
     cy.visit("/");
   });
 
-  it("should display the Gpay-Remit brand", () => {
-    cy.get("h1").should("contain", "Gpay-Remit");
+  it("should display the Payvora brand", () => {
+    cy.get("h1").should("contain", "Payvora");
   });
 
   it("should have navigation links", () => {
@@ -49,7 +49,7 @@ describe("Navigation and Layout", () => {
   it("should have language selector", () => {
     cy.get('select[aria-label="Select Language"]').should("exist");
     cy.get('select[aria-label="Select Language"]').select("es");
-    cy.get("h1").should("contain", "Gpay-Remit");
+    cy.get("h1").should("contain", "Payvora");
   });
 
   it("should have product tour button", () => {

@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/models"
 	"gorm.io/gorm"
 )
 

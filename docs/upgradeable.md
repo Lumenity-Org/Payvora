@@ -1,6 +1,6 @@
 # Upgradeable Contract Pattern
 
-Gpay-Remit smart contracts implement Soroban's native upgrade pattern,
+Payvora smart contracts implement Soroban's native upgrade pattern,
 allowing seamless logic updates without data loss or downtime.
 
 ## How It Works
@@ -146,7 +146,7 @@ soroban contract build
 
 # 2. Upload the new WASM and get its hash
 soroban contract upload \
-  --wasm target/wasm32-unknown-unknown/release/gpay_remit_contracts.wasm \
+  --wasm target/wasm32-unknown-unknown/release/payvora_contracts.wasm \
   --network testnet --source admin
 
 # 3. Call upgrade on the existing contract

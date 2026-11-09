@@ -6,10 +6,10 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/gpay-remit/config"
-	"github.com/yourusername/gpay-remit/errors"
-	"github.com/yourusername/gpay-remit/models"
-	"github.com/yourusername/gpay-remit/utils"
+	"github.com/yourusername/payvora/config"
+	"github.com/yourusername/payvora/errors"
+	"github.com/yourusername/payvora/models"
+	"github.com/yourusername/payvora/utils"
 	"gorm.io/gorm"
 )
 

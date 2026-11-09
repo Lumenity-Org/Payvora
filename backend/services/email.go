@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/models"
 )
 
 // htmlTagPattern matches any `<...>` sequence, used by sanitizeEmailField
@@ -218,7 +218,7 @@ func (s *EmailService) SendPaymentCompletedEmail(user *models.User, payment *mod
                 </div>
             </div>
             
-            <p>Thank you for using GPay-Remit!</p>
+            <p>Thank you for using Payvora!</p>
         </div>
         <div class="footer">
             <p>This is an automated email. Please do not reply.</p>
@@ -474,7 +474,7 @@ func (s *EmailService) SendPasswordResetEmail(user *models.User, token string) e
         <div class="content">
             <p>Hello {{.UserName}},</p>
             
-            <p>We received a request to reset your password for your GPay-Remit account.</p>
+            <p>We received a request to reset your password for your Payvora account.</p>
             
             <div class="info">
                 <strong>Reset Token:</strong>
@@ -500,7 +500,7 @@ func (s *EmailService) SendPasswordResetEmail(user *models.User, token string) e
         </div>
         <div class="footer">
             <p>This is an automated email. Please do not reply.</p>
-            <p>GPay-Remit Security Team</p>
+            <p>Payvora Security Team</p>
         </div>
     </div>
 </body>
@@ -522,7 +522,7 @@ func (s *EmailService) SendPasswordResetEmail(user *models.User, token string) e
 		return fmt.Errorf("failed to execute template: %w", err)
 	}
 
-	subject := "Password Reset Request - GPay-Remit"
+	subject := "Password Reset Request - Payvora"
 	return s.SendEmail(user.Email, subject, body.String())
 }
 
@@ -576,7 +576,7 @@ func (s *EmailService) SendPaymentRequestAcceptedEmail(user *models.User, pr *mo
                 </div>
             </div>
             
-            <p>Thank you for using GPay-Remit!</p>
+            <p>Thank you for using Payvora!</p>
         </div>
         <div class="footer">
             <p>This is an automated email. Please do not reply.</p>

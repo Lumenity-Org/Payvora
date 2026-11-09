@@ -9,9 +9,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"github.com/yourusername/gpay-remit/middleware"
-	"github.com/yourusername/gpay-remit/models"
-	"github.com/yourusername/gpay-remit/services"
+	"github.com/yourusername/payvora/middleware"
+	"github.com/yourusername/payvora/models"
+	"github.com/yourusername/payvora/services"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )

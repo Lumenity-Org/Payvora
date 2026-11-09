@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/gpay-remit/config"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/config"
+	"github.com/yourusername/payvora/models"
 	"gorm.io/gorm"
 )
 
@@ -31,7 +31,7 @@ func (s *Server) PlaygroundHandler() gin.HandlerFunc {
 		html := `<!DOCTYPE html>
 <html>
 <head>
-    <title>Gpay-Remit GraphQL Playground</title>
+    <title>Payvora GraphQL Playground</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/graphql-playground-react/build/static/css/index.css" />
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/graphql-playground-react/build/favicon.png" />
     <script src="https://cdn.jsdelivr.net/npm/graphql-playground-react/build/static/js/middleware.js"></script>

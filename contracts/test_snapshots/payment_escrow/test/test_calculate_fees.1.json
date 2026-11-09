@@ -496,7 +496,7 @@
           "v0": {
             "topics": [
               {
-                "symbol": "gpayremit"
+                "symbol": "payvora"
               },
               {
                 "symbol": "escrow"
@@ -598,7 +598,7 @@
           "v0": {
             "topics": [
               {
-                "symbol": "gpayremit"
+                "symbol": "payvora"
               },
               {
                 "symbol": "escrow"
@@ -700,7 +700,7 @@
           "v0": {
             "topics": [
               {
-                "symbol": "gpayremit"
+                "symbol": "payvora"
               },
               {
                 "symbol": "escrow"

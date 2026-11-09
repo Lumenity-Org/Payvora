@@ -16,7 +16,7 @@ func TestHealthEndpoint(t *testing.T) {
 	router.GET("/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"status":  "healthy",
-			"service": "gpay-remit-api",
+			"service": "payvora-api",
 		})
 	})
 

@@ -3,7 +3,7 @@ package services
 import (
 	"math"
 
-	"github.com/yourusername/gpay-remit/config"
+	"github.com/yourusername/payvora/config"
 )
 
 type FeeBreakdown struct {

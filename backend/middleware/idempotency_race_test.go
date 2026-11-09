@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/models"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )

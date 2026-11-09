@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/gpay-remit/errors"
-	"github.com/yourusername/gpay-remit/services"
-	"github.com/yourusername/gpay-remit/utils"
+	"github.com/yourusername/payvora/errors"
+	"github.com/yourusername/payvora/services"
+	"github.com/yourusername/payvora/utils"
 	"gorm.io/gorm"
 )
 

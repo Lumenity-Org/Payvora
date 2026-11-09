@@ -12,7 +12,7 @@ import (
 	"unicode"
 
 	"github.com/pquerna/otp/totp"
-	"github.com/yourusername/gpay-remit/encryption"
+	"github.com/yourusername/payvora/encryption"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 )
@@ -182,7 +182,7 @@ func (u *User) ResetFailedLoginAttempts(db *gorm.DB) error {
 // GenerateTOTPSecret creates a new TOTP secret for the user
 func (u *User) GenerateTOTPSecret() (string, string, error) {
 	key, err := totp.Generate(totp.GenerateOpts{
-		Issuer:      "GPay-Remit",
+		Issuer:      "Payvora",
 		AccountName: u.Email,
 		Period:      30,
 		SecretSize:  32,

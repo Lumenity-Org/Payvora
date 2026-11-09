@@ -4,7 +4,7 @@ describe("Login Page", () => {
   });
 
   it("should display the login form", () => {
-    cy.contains("Gpay-Remit").should("be.visible");
+    cy.contains("Payvora").should("be.visible");
     cy.get('input[name="email"]').should("exist");
     cy.get('input[name="password"]').should("exist");
     cy.get('button[type="submit"]').should("exist");

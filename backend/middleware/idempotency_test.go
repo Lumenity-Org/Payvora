@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/models"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )

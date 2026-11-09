@@ -1,4 +1,4 @@
-module github.com/yourusername/gpay-remit
+module github.com/yourusername/payvora
 
 go 1.25.0
 

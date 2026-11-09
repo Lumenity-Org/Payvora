@@ -29,7 +29,7 @@ pub enum EventData {
 #[cfg_attr(not(test), derive(Clone, Debug, PartialEq, Eq))]
 #[cfg_attr(not(test), contracttype)]
 #[cfg_attr(test, derive(Clone, Debug, PartialEq, Eq))]
-pub struct GpayEvent {
+pub struct PayvoraEvent {
     pub timestamp: u64,
     pub actor: Address,
     pub amount: i128,
@@ -50,8 +50,8 @@ pub fn emit(
     #[cfg(not(test))]
     {
         env.events().publish(
-            (symbol_short!("gpayremit"), component, action, id),
-            GpayEvent {
+            (symbol_short!("payvora"), component, action, id),
+            PayvoraEvent {
                 timestamp: env.ledger().timestamp(),
                 actor: actor.clone(),
                 amount,
@@ -64,7 +64,7 @@ pub fn emit(
     {
         // In test mode, publish a simpler event structure
         env.events().publish(
-            (symbol_short!("gpayremit"), component, action, id),
+            (symbol_short!("payvora"), component, action, id),
             (env.ledger().timestamp(), actor.clone(), amount, status),
         );
     }

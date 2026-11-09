@@ -1,4 +1,4 @@
-# Gpay-Remit — Multi-Channel Alerting Configuration
+# Payvora — Multi-Channel Alerting Configuration
 # Issue #280: External Uptime Monitoring
 #
 # Supported channels:
@@ -36,12 +36,12 @@ email:
     port: 587
     username: monitoring@your-company.com # REPLACE or env SMTP_USER
     # Password supplied via env SMTP_PASSWORD (never commit plaintext)
-    from: "Gpay-Remit Monitoring <monitoring@your-company.com>"
+    from: "Payvora Monitoring <monitoring@your-company.com>"
     tls: true
   # Alert templates
   subjects:
-    down: "[DOWN] Gpay-Remit: {monitor_friendly_name} is unreachable"
-    up:   "[UP]   Gpay-Remit: {monitor_friendly_name} has recovered"
+    down: "[DOWN] Payvora: {monitor_friendly_name} is unreachable"
+    up:   "[UP]   Payvora: {monitor_friendly_name} has recovered"
   # Escalation: if still down after 15 min, also email on-call manager
   escalation:
     enabled: true
@@ -135,12 +135,12 @@ sms:
 status_page:
   enabled: true
   # Public status page URL after creation in UptimeRobot dashboard
-  url: "https://status.gpay-remit.example.com"  # REPLACE with real URL
+  url: "https://status.payvora.example.com"  # REPLACE with real URL
   custom_domain: true
   show_monitors:
-    - "[Gpay-Remit] Health Check"
-    - "[Gpay-Remit] Frontend"
-    - "[Gpay-Remit] Auth Login Endpoint"
-    - "[Gpay-Remit] Remittances API"
-    - "[Gpay-Remit] Fee Calculator API"
-    - "[Gpay-Remit] Exchange Rates API"
+    - "[Payvora] Health Check"
+    - "[Payvora] Frontend"
+    - "[Payvora] Auth Login Endpoint"
+    - "[Payvora] Remittances API"
+    - "[Payvora] Fee Calculator API"
+    - "[Payvora] Exchange Rates API"

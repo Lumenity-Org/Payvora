@@ -1,26 +1,26 @@
-# Uptime Monitoring — Gpay-Remit
+# Uptime Monitoring — Payvora
 
-> Issue [#280](https://github.com/parkerwinner/Gpay-Remit/issues/280) — External uptime monitoring via UptimeRobot
+> Issue [#280](https://github.com/parkerwinner/Payvora/issues/280) — External uptime monitoring via UptimeRobot
 
 ## Status
 
 | Monitor | Status |
 |---|---|
-| Overall | [![Uptime Robot status](https://img.shields.io/uptimerobot/status/REPLACE_WITH_MONITOR_ID?label=Overall&style=flat-square)](https://status.gpay-remit.example.com) |
-| Health Check | [![Uptime Robot ratio](https://img.shields.io/uptimerobot/ratio/REPLACE_WITH_HEALTH_MONITOR_ID?style=flat-square&label=Health)](https://status.gpay-remit.example.com) |
-| Frontend | [![Uptime Robot ratio](https://img.shields.io/uptimerobot/ratio/REPLACE_WITH_FRONTEND_MONITOR_ID?style=flat-square&label=Frontend)](https://status.gpay-remit.example.com) |
-| API | [![Uptime Robot ratio](https://img.shields.io/uptimerobot/ratio/REPLACE_WITH_API_MONITOR_ID?style=flat-square&label=API)](https://status.gpay-remit.example.com) |
+| Overall | [![Uptime Robot status](https://img.shields.io/uptimerobot/status/REPLACE_WITH_MONITOR_ID?label=Overall&style=flat-square)](https://status.payvora.example.com) |
+| Health Check | [![Uptime Robot ratio](https://img.shields.io/uptimerobot/ratio/REPLACE_WITH_HEALTH_MONITOR_ID?style=flat-square&label=Health)](https://status.payvora.example.com) |
+| Frontend | [![Uptime Robot ratio](https://img.shields.io/uptimerobot/ratio/REPLACE_WITH_FRONTEND_MONITOR_ID?style=flat-square&label=Frontend)](https://status.payvora.example.com) |
+| API | [![Uptime Robot ratio](https://img.shields.io/uptimerobot/ratio/REPLACE_WITH_API_MONITOR_ID?style=flat-square&label=API)](https://status.payvora.example.com) |
 
 Replace each `REPLACE_WITH_*_MONITOR_ID` badge URL parameter with the numeric
 monitor ID from your UptimeRobot dashboard after running the setup script.
 
-Public status page: https://status.gpay-remit.example.com
+Public status page: https://status.payvora.example.com
 
 ---
 
 ## Overview
 
-All critical Gpay-Remit endpoints are monitored every **5 minutes** from
+All critical Payvora endpoints are monitored every **5 minutes** from
 UptimeRobot's global probe network. Downtime triggers alerts via multiple
 channels to ensure fast response times.
 
@@ -120,9 +120,9 @@ runs on every PR that touches the `monitoring/` directory and verifies:
 ### Monitor goes DOWN
 
 1. Check the UptimeRobot alert email/Slack for the failing URL
-2. Verify manually: `curl -I https://gpay-remit.example.com/health`
-3. Check pod logs: `kubectl logs -l app=gpay-remit-backend --tail=100`
-4. Check k8s deployment status: `kubectl get pods -l app=gpay-remit-backend`
+2. Verify manually: `curl -I https://payvora.example.com/health`
+3. Check pod logs: `kubectl logs -l app=payvora-backend --tail=100`
+4. Check k8s deployment status: `kubectl get pods -l app=payvora-backend`
 5. If the database is unreachable, check PostgreSQL pod status
 6. Escalate to on-call if not resolved within 15 minutes
 

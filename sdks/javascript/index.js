@@ -1,15 +1,15 @@
 "use strict";
 
 /**
- * GpayRemitClient — official JavaScript client for the Gpay-Remit API.
+ * PayvoraClient — official JavaScript client for the Payvora API.
  *
  * Usage:
- *   const { GpayRemitClient } = require("@gpay-remit/sdk");
- *   const client = new GpayRemitClient({ baseUrl: "https://api.example.com" });
+ *   const { PayvoraClient } = require("@payvora/sdk");
+ *   const client = new PayvoraClient({ baseUrl: "https://api.example.com" });
  *   await client.auth.login({ email, password });
  */
 
-class GpayRemitClient {
+class PayvoraClient {
   /**
    * @param {object} opts
    * @param {string} opts.baseUrl  API base URL (e.g. http://localhost:8080)
@@ -166,4 +166,4 @@ function toQuery(params) {
   return qs ? `?${qs}` : "";
 }
 
-module.exports = { GpayRemitClient };
+module.exports = { PayvoraClient };

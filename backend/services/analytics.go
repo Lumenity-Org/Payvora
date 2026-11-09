@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/models"
 	"gorm.io/gorm"
 )
 

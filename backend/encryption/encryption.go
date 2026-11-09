@@ -125,7 +125,7 @@ func init() {
 	// Initialize default encryptor with ENCRYPTION_KEY or a fallback key
 	key := os.Getenv("ENCRYPTION_KEY")
 	if key == "" {
-		key = "gpay-remit-default-master-key-for-at-rest-encryption-32"
+		key = "payvora-default-master-key-for-at-rest-encryption-32"
 	}
 	enc, err := NewAESGCMEncryptor([]byte(key))
 	if err == nil {

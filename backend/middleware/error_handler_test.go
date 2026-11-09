@@ -8,7 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"github.com/yourusername/gpay-remit/errors"
+	"github.com/yourusername/payvora/errors"
 )
 
 func TestErrorHandler(t *testing.T) {

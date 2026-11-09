@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/models"
 )
 
 func TestNewEmailService(t *testing.T) {

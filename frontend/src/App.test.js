@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders Gpay-Remit header", () => {
+test("renders Payvora header", () => {
   render(<App />);
-  const headerElement = screen.getByRole("heading", { level: 1, name: /Gpay-Remit/i });
+  const headerElement = screen.getByRole("heading", { level: 1, name: /Payvora/i });
   expect(headerElement).toBeInTheDocument();
 });
 

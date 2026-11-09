@@ -10,8 +10,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/jung-kurt/gofpdf"
-	"github.com/yourusername/gpay-remit/errors"
-	"github.com/yourusername/gpay-remit/models"
+	"github.com/yourusername/payvora/errors"
+	"github.com/yourusername/payvora/models"
 	"gorm.io/gorm"
 )
 
